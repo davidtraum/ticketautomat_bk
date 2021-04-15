@@ -7,5 +7,5 @@ Bis nach den Ferien:
 Padlet in Projekt übertragen & auswählen was als nächsztes gemacht werden soll. (In todo verschieben)
 
 ### Aktuelle Aufgabe:
-Aktivitätsdiagramm zu aktueller User-Story (Wechselgeld)
-Issues den User-Stories zuordnen
+- Aktivitätsdiagramm zu aktueller User-Story (Wechselgeld)
+- Issues den User-Stories zuordnen
