@@ -9,7 +9,7 @@ Padlet in Projekt übertragen & auswählen was als nächsztes gemacht werden sol
 ### Aufgabe 15.4 - bis 22.4: 
 - Aktivitätsdiagramm zu aktueller User-Story (Wechselgeld)
 - Issues den User-Stories zuordnen
-
+- [x]
 
 ### Aufgabe 29.04 - bis 06.05
 - User-Interface entwerfen
