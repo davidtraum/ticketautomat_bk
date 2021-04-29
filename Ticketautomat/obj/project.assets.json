@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Schule\\source\\repos\\Ticketautomat\\Ticketautomat\\Ticketautomat.csproj",
+      "projectUniqueName": "C:\\Users\\Schule\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj",
       "projectName": "Ticketautomat",
-      "projectPath": "C:\\Users\\Schule\\source\\repos\\Ticketautomat\\Ticketautomat\\Ticketautomat.csproj",
+      "projectPath": "C:\\Users\\Schule\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj",
       "packagesPath": "C:\\Users\\Schule\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Schule\\source\\repos\\Ticketautomat\\Ticketautomat\\obj\\",
+      "outputPath": "C:\\Users\\Schule\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
