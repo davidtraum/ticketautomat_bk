@@ -14,4 +14,4 @@ Padlet in Projekt übertragen & auswählen was als nächsztes gemacht werden sol
 ### Aufgabe 29.04 - bis 06.05
 - User-Interface entwerfen
 - Ticket-Klasse fertigstellen
-- []
+- [ ]
