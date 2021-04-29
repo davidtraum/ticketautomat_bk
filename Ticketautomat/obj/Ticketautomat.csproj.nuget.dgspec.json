@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Schule\\source\\repos\\Ticketautomat\\Ticketautomat\\Ticketautomat.csproj": {}
+    "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Schule\\source\\repos\\Ticketautomat\\Ticketautomat\\Ticketautomat.csproj": {
+    "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Schule\\source\\repos\\Ticketautomat\\Ticketautomat\\Ticketautomat.csproj",
+        "projectUniqueName": "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj",
         "projectName": "Ticketautomat",
-        "projectPath": "C:\\Users\\Schule\\source\\repos\\Ticketautomat\\Ticketautomat\\Ticketautomat.csproj",
-        "packagesPath": "C:\\Users\\Schule\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Schule\\source\\repos\\Ticketautomat\\Ticketautomat\\obj\\",
+        "projectPath": "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj",
+        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Schule\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
