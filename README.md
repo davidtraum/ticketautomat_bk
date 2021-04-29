@@ -3,7 +3,7 @@
 
 Padlet: https://padlet.com/friedrich35/n8aa3z5aeoa4r1f
 
-### Aufgabe Osterferien:
+### Aufgabe Osterferien: DONE
 - Padlet in Projekt übertragen
 - Auswählen was als nächsztes gemacht werden soll. (In todo verschieben)
 
