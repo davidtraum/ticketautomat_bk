@@ -12,6 +12,8 @@ namespace Ticketautomat
 {
     public partial class Ticketautomat : Form
     {
+        private Form2 paymentForm = new Form2();
+
         public Ticketautomat()
         {
             InitializeComponent();
@@ -34,22 +36,27 @@ namespace Ticketautomat
 
         private void buy_default_Click(object sender, EventArgs e)
         {
-
+            this.ShowPaymentScreen();
         }
 
         private void buy_extended_Click(object sender, EventArgs e)
         {
-
+            this.ShowPaymentScreen();
         }
 
         private void buy_firstclass_Click(object sender, EventArgs e)
         {
-
+            this.ShowPaymentScreen();
         }
 
         private void Ticketautomat_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ShowPaymentScreen()
+        {
+            this.paymentForm.ShowDialog();
         }
     }
 }
