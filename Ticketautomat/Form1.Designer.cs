@@ -31,22 +31,19 @@ namespace Ticketautomat
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ticketautomat));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.buy_firstclass = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.buy_extended = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.buy_default = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.paidLabel = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.ticketComboBox = new System.Windows.Forms.ComboBox();
+            this.pay10ct = new System.Windows.Forms.Button();
+            this.pay20ct = new System.Windows.Forms.Button();
+            this.pay50ct = new System.Windows.Forms.Button();
+            this.pay1euro = new System.Windows.Forms.Button();
+            this.pay2euro = new System.Windows.Forms.Button();
+            this.pay10euro = new System.Windows.Forms.Button();
+            this.pay20euro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -59,134 +56,128 @@ namespace Ticketautomat
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
+            // groupBox1
             // 
-            this.panel3.BackColor = System.Drawing.Color.Orange;
-            this.panel3.Controls.Add(this.buy_firstclass);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(624, 322);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(164, 100);
-            this.panel3.TabIndex = 3;
+            this.groupBox1.Controls.Add(this.paidLabel);
+            this.groupBox1.Controls.Add(this.priceLabel);
+            this.groupBox1.Controls.Add(this.ticketComboBox);
+            this.groupBox1.Location = new System.Drawing.Point(29, 319);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ticket auswählen";
             // 
-            // buy_firstclass
+            // paidLabel
             // 
-            this.buy_firstclass.Location = new System.Drawing.Point(7, 64);
-            this.buy_firstclass.Name = "buy_firstclass";
-            this.buy_firstclass.Size = new System.Drawing.Size(75, 23);
-            this.buy_firstclass.TabIndex = 2;
-            this.buy_firstclass.Text = "Kaufen";
-            this.buy_firstclass.UseVisualStyleBackColor = true;
-            this.buy_firstclass.Click += new System.EventHandler(this.buy_firstclass_Click);
+            this.paidLabel.AutoSize = true;
+            this.paidLabel.Location = new System.Drawing.Point(7, 71);
+            this.paidLabel.Name = "paidLabel";
+            this.paidLabel.Size = new System.Drawing.Size(57, 15);
+            this.paidLabel.TabIndex = 2;
+            this.paidLabel.Text = "Bezahlt: 0";
             // 
-            // label2
+            // priceLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(7, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "400€";
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Location = new System.Drawing.Point(7, 52);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(12, 15);
+            this.priceLabel.TabIndex = 1;
+            this.priceLabel.Text = "-";
             // 
-            // label1
+            // ticketComboBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Erste Klasse";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.ticketComboBox.FormattingEnabled = true;
+            this.ticketComboBox.Location = new System.Drawing.Point(6, 22);
+            this.ticketComboBox.Name = "ticketComboBox";
+            this.ticketComboBox.Size = new System.Drawing.Size(121, 23);
+            this.ticketComboBox.TabIndex = 0;
+            this.ticketComboBox.SelectedIndexChanged += new System.EventHandler(this.ticketComboBox_SelectedIndexChanged);
             // 
-            // panel1
+            // pay10ct
             // 
-            this.panel1.BackColor = System.Drawing.Color.Orange;
-            this.panel1.Controls.Add(this.buy_extended);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(340, 322);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(164, 100);
-            this.panel1.TabIndex = 4;
+            this.pay10ct.BackColor = System.Drawing.Color.Transparent;
+            this.pay10ct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pay10ct.BackgroundImage")));
+            this.pay10ct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pay10ct.Location = new System.Drawing.Point(276, 359);
+            this.pay10ct.Name = "pay10ct";
+            this.pay10ct.Size = new System.Drawing.Size(60, 60);
+            this.pay10ct.TabIndex = 2;
+            this.pay10ct.UseVisualStyleBackColor = false;
+            this.pay10ct.Click += new System.EventHandler(this.pay10ct_Click);
             // 
-            // buy_extended
+            // pay20ct
             // 
-            this.buy_extended.Location = new System.Drawing.Point(7, 64);
-            this.buy_extended.Name = "buy_extended";
-            this.buy_extended.Size = new System.Drawing.Size(75, 23);
-            this.buy_extended.TabIndex = 2;
-            this.buy_extended.Text = "Kaufen";
-            this.buy_extended.UseVisualStyleBackColor = true;
-            this.buy_extended.Click += new System.EventHandler(this.buy_extended_Click);
+            this.pay20ct.BackColor = System.Drawing.Color.Transparent;
+            this.pay20ct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pay20ct.BackgroundImage")));
+            this.pay20ct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pay20ct.Location = new System.Drawing.Point(342, 359);
+            this.pay20ct.Name = "pay20ct";
+            this.pay20ct.Size = new System.Drawing.Size(60, 60);
+            this.pay20ct.TabIndex = 3;
+            this.pay20ct.UseVisualStyleBackColor = false;
+            this.pay20ct.Click += new System.EventHandler(this.pay20ct_Click);
             // 
-            // label3
+            // pay50ct
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(7, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "100€";
+            this.pay50ct.BackColor = System.Drawing.Color.Transparent;
+            this.pay50ct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pay50ct.BackgroundImage")));
+            this.pay50ct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pay50ct.Location = new System.Drawing.Point(408, 359);
+            this.pay50ct.Name = "pay50ct";
+            this.pay50ct.Size = new System.Drawing.Size(60, 60);
+            this.pay50ct.TabIndex = 4;
+            this.pay50ct.UseVisualStyleBackColor = false;
+            this.pay50ct.Click += new System.EventHandler(this.pay50ct_Click);
             // 
-            // label4
+            // pay1euro
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 21);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Fernfahrt";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.pay1euro.BackColor = System.Drawing.Color.Transparent;
+            this.pay1euro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pay1euro.BackgroundImage")));
+            this.pay1euro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pay1euro.Location = new System.Drawing.Point(474, 359);
+            this.pay1euro.Name = "pay1euro";
+            this.pay1euro.Size = new System.Drawing.Size(60, 60);
+            this.pay1euro.TabIndex = 5;
+            this.pay1euro.UseVisualStyleBackColor = false;
+            this.pay1euro.Click += new System.EventHandler(this.pay1euro_Click);
             // 
-            // panel2
+            // pay2euro
             // 
-            this.panel2.BackColor = System.Drawing.Color.Orange;
-            this.panel2.Controls.Add(this.buy_default);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(43, 322);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(164, 100);
-            this.panel2.TabIndex = 4;
+            this.pay2euro.BackColor = System.Drawing.Color.Transparent;
+            this.pay2euro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pay2euro.BackgroundImage")));
+            this.pay2euro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pay2euro.Location = new System.Drawing.Point(540, 359);
+            this.pay2euro.Name = "pay2euro";
+            this.pay2euro.Size = new System.Drawing.Size(60, 60);
+            this.pay2euro.TabIndex = 6;
+            this.pay2euro.UseVisualStyleBackColor = false;
+            this.pay2euro.Click += new System.EventHandler(this.pay2euro_Click);
             // 
-            // buy_default
+            // pay10euro
             // 
-            this.buy_default.Location = new System.Drawing.Point(7, 64);
-            this.buy_default.Name = "buy_default";
-            this.buy_default.Size = new System.Drawing.Size(75, 23);
-            this.buy_default.TabIndex = 2;
-            this.buy_default.Text = "Kaufen";
-            this.buy_default.UseVisualStyleBackColor = true;
-            this.buy_default.Click += new System.EventHandler(this.buy_default_Click);
+            this.pay10euro.BackColor = System.Drawing.Color.Transparent;
+            this.pay10euro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pay10euro.BackgroundImage")));
+            this.pay10euro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pay10euro.Location = new System.Drawing.Point(606, 293);
+            this.pay10euro.Name = "pay10euro";
+            this.pay10euro.Size = new System.Drawing.Size(117, 60);
+            this.pay10euro.TabIndex = 7;
+            this.pay10euro.UseVisualStyleBackColor = false;
+            this.pay10euro.Click += new System.EventHandler(this.pay10euro_Click);
             // 
-            // label5
+            // pay20euro
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(7, 32);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 15);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "10€";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 21);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Standard";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.pay20euro.BackColor = System.Drawing.Color.Transparent;
+            this.pay20euro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pay20euro.BackgroundImage")));
+            this.pay20euro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pay20euro.Location = new System.Drawing.Point(606, 359);
+            this.pay20euro.Name = "pay20euro";
+            this.pay20euro.Size = new System.Drawing.Size(117, 60);
+            this.pay20euro.TabIndex = 8;
+            this.pay20euro.UseVisualStyleBackColor = false;
+            this.pay20euro.Click += new System.EventHandler(this.pay20euro_Click);
             // 
             // Ticketautomat
             // 
@@ -195,22 +186,22 @@ namespace Ticketautomat
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pay20euro);
+            this.Controls.Add(this.pay10euro);
+            this.Controls.Add(this.pay2euro);
+            this.Controls.Add(this.pay1euro);
+            this.Controls.Add(this.pay50ct);
+            this.Controls.Add(this.pay20ct);
+            this.Controls.Add(this.pay10ct);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Ticketautomat";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Ticketautomat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -218,18 +209,17 @@ namespace Ticketautomat
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buy_firstclass;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button buy_extended;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button buy_default;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox ticketComboBox;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Label paidLabel;
+        private System.Windows.Forms.Button pay10ct;
+        private System.Windows.Forms.Button pay20ct;
+        private System.Windows.Forms.Button pay50ct;
+        private System.Windows.Forms.Button pay1euro;
+        private System.Windows.Forms.Button pay2euro;
+        private System.Windows.Forms.Button pay10euro;
+        private System.Windows.Forms.Button pay20euro;
     }
 }
 

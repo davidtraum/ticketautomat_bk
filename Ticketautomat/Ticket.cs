@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ticketautomat_Test
 {
-    class Ticket
+    public class Ticket
     {
         private string description;
         private double price;
@@ -59,6 +59,11 @@ namespace Ticketautomat_Test
         public double getPaid()
         {
             return this.paid;
+        }
+
+        public bool isPaid()
+        {
+            return this.paid >= this.price;
         }
     }
 }

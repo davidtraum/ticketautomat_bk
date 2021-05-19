@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj": {}
+    "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk_work\\Ticketautomat\\Ticketautomat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj": {
+    "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk_work\\Ticketautomat\\Ticketautomat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj",
+        "projectUniqueName": "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk_work\\Ticketautomat\\Ticketautomat.csproj",
         "projectName": "Ticketautomat",
-        "projectPath": "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\Ticketautomat.csproj",
+        "projectPath": "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk_work\\Ticketautomat\\Ticketautomat.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk\\Ticketautomat\\obj\\",
+        "outputPath": "C:\\Users\\david\\Source\\Repos\\ticketautomat_bk_work\\Ticketautomat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
