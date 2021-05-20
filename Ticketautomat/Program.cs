@@ -18,6 +18,7 @@ namespace Ticketautomat
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Ticketautomat());
+            //Application.Run(new Provision());
         }
     }
 }

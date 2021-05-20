@@ -51,10 +51,10 @@ namespace Ticketautomat
             this.priceLabel.Text = "Preis: " + this.selectedTicket.getPrice().ToString() + '€';
             if(this.selectedTicket.isPaid())
             {
-                this.paidLabel.Text = "Wechselgeld: " + this.selectedTicket.getExchange().ToString() + "€";
+                this.paidLabel.Text = "Wechselgeld: " + this.roundPrice(this.selectedTicket.getExchange()).ToString() + "€";
             } else
             {
-                this.paidLabel.Text = "Bezahlt: " + this.selectedTicket.getPaid().ToString() + "€";
+                this.paidLabel.Text = "Bezahlt: " + this.roundPrice(this.selectedTicket.getPaid()).ToString() + "€";
             }
         }
 
@@ -62,6 +62,11 @@ namespace Ticketautomat
         {
             this.setSelectedTicket((String)this.ticketComboBox.SelectedItem);
         }
+
+        private double roundPrice(double price)
+        {
+            return Math.Round(price, 2);
+        } 
 
         private void payAmount(double amount)
         {
