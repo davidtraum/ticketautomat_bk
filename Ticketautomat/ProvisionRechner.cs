@@ -8,22 +8,19 @@ namespace Ticketautomat
 {
     class ProvisionRechner
     {
-        public ProvisionRechner()
-        {
-
-        }
+        private double[] limits = { 20000, 10000, 5000 };
+        private double[] provisions = { 0.05, 0.03, 0.01 };
 
         public double berechneProvision(double betrag)
         {
-            if(betrag >= 20000)
+            int index = 0;
+            foreach(double limit in limits)
             {
-                return betrag + betrag * 0.05;
-            } else if(betrag >= 10000)
-            {
-                return betrag + betrag * 0.02;
-            } else if(betrag >= 5000)
-            {
-                return betrag + betrag * 0.01;
+                if(betrag >= limit)
+                {
+                    return betrag + betrag * provisions[index]; 
+                }
+                index++;
             }
             return betrag;
         }

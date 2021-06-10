@@ -18,7 +18,7 @@ namespace Ticketautomat
             InitializeComponent();
         }
 
-        private void numberInput_ValueChanged(object sender, EventArgs e) { 
+        private void numberInput_ValueChanged(object sender, EventArgs e) {
             this.provisionOutput.Text = "Provision: " + 
                                                 Math.Round(
                                                     provisionRechner.berechneProvision(

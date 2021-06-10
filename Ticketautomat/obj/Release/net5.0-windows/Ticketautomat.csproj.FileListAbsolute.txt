@@ -38,3 +38,4 @@ C:\Users\david\Source\Repos\ticketautomat_bk_work\Ticketautomat\obj\Release\net5
 C:\Users\david\Source\Repos\ticketautomat_bk_work\Ticketautomat\obj\Release\net5.0-windows\Ticketautomat.pdb
 C:\Users\david\Source\Repos\ticketautomat_bk_work\Ticketautomat\obj\Release\net5.0-windows\Ticketautomat.genruntimeconfig.cache
 C:\Users\david\Source\Repos\ticketautomat_bk_work\Ticketautomat\obj\Release\net5.0-windows\Ticketautomat.Provision.resources
+C:\Users\david\Source\Repos\ticketautomat_bk_work\Ticketautomat\obj\Release\net5.0-windows\Ticketautomat.Mietpreis.resources
